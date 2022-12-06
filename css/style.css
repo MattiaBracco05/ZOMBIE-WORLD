@@ -1,0 +1,94 @@
+html,
+body,
+#game-container {
+    margin: 0;
+    padding: 0;
+}
+
+#game-container {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#game-container>canvas {
+    border-radius: 5px;
+}
+
+.backgroundHome {
+    background-image: url('../sfondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+
+.sfondoDescrizioni {
+    background: black;
+}
+
+.titolo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    color: yellow;
+    font-size: 8vh;
+}
+
+.sottoTitolo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    color: white;
+    font-size: 5vh;
+}
+
+.descrizione {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 4vh;
+}
+
+.titoloCard {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: yellow;
+}
+
+.descrizioneCard {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.testo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 4vh;
+}
+
+.marginHome {
+    margin-bottom: 70vh;
+}
+
+.buttonPlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    background-color: darkred;
+}

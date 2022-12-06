@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- PHASER -->
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
+    <!-- JS -->
+    <script src="./js/script.js"></script>
+    <!-- HTML:5 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4C Bracco Mattia ~ Il Pianeta Degli Zombie</title>
+</head>
+
+<body>
+    <!-- PARTE 1 (INTRODUZIONE) -->
+    <div class="container-fluid backgroundHome">
+        <!-- TITOLO -->
+        <div class="row">
+            <div class="col-12 titolo">IL PIANETA DEGLI ZOMBIE</div>
+        </div>
+        <!-- DIV CON MARGINE -->
+        <div class="row">
+            <div class="col-12 marginHome">
+            </div>
+        </div>
+        <!-- DESCRIZIONE -->
+        <div class="row">
+            <div class="col-12 descrizione">
+                <p>
+                    L'obbiettivo di questo gioco è combattere contro gli altri zombie presenti nel pianeta,
+                    </br>Impossessati del teschio d'oro nascosto in giro per la mappa per poter aprire il forziere e vincere.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- PARTE 2 (DESCRIZIONE)-->
+    <div class="container-fluid sfondoDescrizioni">
+        <!-- SOTTOTITOLO -->
+        <div class="row">
+            <div class="col-12 mt-3 sottoTitolo">- PERICOLI NELLA MAPPA -</div>
+        </div>
+        <!-- CAMPO MINATO -->
+        <div class="row">
+            <div class="col-xs-12, col-sm-12, col-md-6, col-lg-6, col-xl-6 mt-3"><img src="./img/campo_minato.jpg" alt="pericolo campo minato" width="100%"></div>
+            <div class="col-xs-12, col-sm-12, col-md-6, col-lg-6, col-xl-6 testo">
+                <p>
+                    Presta molta attanzone a dove metti i piedi se non vuoi essere sbalzato in cielo come un razzo,
+                    </br>nel campo si trovano mine e bombe inesplose abbandonate dalle precedenti guerre contro gli esserei umani
+                    </br>
+                    </br>
+                    <font color="red">Nel caso pestassi un ordigno esplosivo subiresti un danno alla tua vita pari a 25.
+                        </br>
+                        </br>Dopo aver raccolto il kit medico premi "E" per utilizzarlo e recuperare parte della tua salute.
+                    </font>
+                </p>
+            </div>
+        </div>
+        <!-- SOTTOTITOLO -->
+        <div class="row">
+            <div class="col-12 mt-3 sottoTitolo">- 1 OGGETTO NASCOSTO DA TROVARE -</div>
+        </div>
+        <!-- TESCHIO D'ORO -->
+        <div class="row">
+            <div class="col-xs-12, col-sm-12, col-md-6, col-lg-6, col-xl-6 testo">
+                <p>
+                    Cerca il teschio d'oro per la mappa, solo dopo essertene impadronito potrai aprire il forziere e di conseguenza vincere.
+                    </br>
+                    </br>
+                    <font color="red">Per aprire il forziere avvicinati ad esso e premi "A".</font>
+                </p>
+            </div>
+            <div class="col-xs-12, col-sm-12, col-md-6, col-lg-6, col-xl-6"><img src="./img/teschio.png" alt="teschio" width="100%"></div>
+        </div>
+        <!-- SOTTOTITOLO -->
+        <div class="row">
+            <div class="col-12 mt-3 sottoTitolo">- 4 NEMICI DI DIFFICOLTA' DIVERSA -</div>
+        </div>
+        <!-- RIGA CARD -->
+        <div class="row justify-content-center mt-3">
+            <!-- Card 1 -->
+            <div class="col-xl-3 col-md-6 mb-3">
+                <div class="card bg-danger">
+                    <img src="./img/z1.png" alt="Zombie 1" width="100%">
+                    <div class="card-body">
+                        <h5 class="card-title titoloCard">Zombie 1</h5>
+                        <p class="card-text descrizioneCard">
+                            Tipo: STATICO
+                            </br>Velocità di movimento: -
+                            </br>Vita: 150
+                            </br>Difficoltà: ▣▢▢▢
+                        </p>
+                        <!-- BARRE PROGRESSIONE -->
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:25%"></div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width:75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-xl-3 col-md-6 mb-3">
+                <div class="card bg-danger">
+                    <img src="./img/z2.png" alt="Zombie 2" width="100%">
+                    <div class="card-body">
+                        <h5 class="card-title titoloCard">Zombie 2</h5>
+                        <p class="card-text descrizioneCard">
+                            Tipo: STATICO
+                            </br>Velocità di movimento: -
+                            </br>Vita: 300
+                            </br>Difficoltà: ▣▣▢▢
+                        </p>
+                        <!-- BARRE PROGRESSIONE -->
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:50%"></div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width:50%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-xl-3 col-md-6 mb-3">
+                <div class="card bg-danger">
+                    <img src="./img/z3.png" alt="zombie_3" width="100%">
+                    <div class="card-body">
+                        <h5 class="card-title titoloCard">Zombie 3</h5>
+                        <p class="card-text mt-3 descrizioneCard">
+                            Tipo: DINAMICO
+                            </br>Velocità di movimento: 1
+                            </br>Vita: 400
+                            </br>Difficoltà: ▣▣▣▢
+                        </p>
+                        <!-- BARRE PROGRESSIONE -->
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:75%"></div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width:25%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-xl-3 col-md-6 mb-3">
+                <div class="card bg-danger">
+                    <img src="./img/z4.png" alt="zombie_4" width="100%">
+                    <div class="card-body">
+                        <h5 class="card-title titoloCard">Zombie 4</h5>
+                        <p class="card-text descrizioneCard">
+                            Tipo: DINAMICO
+                            </br>Velocità di movimento: 3
+                            </br>Vita: 500
+                            </br>Difficoltà: ▣▣▣▣
+                        </p>
+                        <!-- BARRE PROGRESSIONE -->
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TESTO -->
+        <div class="row">
+            <div class="col-12 testo">
+                <p>
+                    Quando sei a contatto con uno zombie la "X" nella scritta "Attack: " presente in alto a sinistra indica che stai attaccando (e di conseguenza non stai subendo danni).
+                    </br>
+                    </br>
+                    <font color="red">Utilizza il tasto "SPACE" per attaccare, se ti scontri con uno zombie mentre non stai attaccando subirai una riduzione dello score oltre ai danni alla tua salute.
+                    </font>
+                </p>
+            </div>
+        </div>
+        <!-- SOTTOTITOLO -->
+        <div class="row">
+            <div class="col-12 mt-3 sottoTitolo">- RIEPILOGO DEI COMANDI -</div>
+        </div>
+        <!-- TESTO -->
+        <div class="row">
+            <div class="col-xs-12, col-sm-12, col-md-8, col-lg-8, col-xl-8 testo justify-content-start">
+                <p>
+                    <font color="red">LEFT ARROW</font> - Per spostarsi a sinistra
+                    </br>
+                    <font color="red">RIGHT ARROW</font> - Per spostarsi a destra
+                    </br>
+                    <font color="red">UP ARROW</font> - Per spostarsi in alto
+                    </br>
+                    <font color="red">DOWN ARROW</font> - Per spostarsi in basso
+                    </br>
+                    <font color="red">SPACE</font> - Per attaccare (tenere premuto)
+                    </br>
+                    <font color="red">A</font> - Per aprire il forziere (solo dopo aver trovato e raccolto il teschio d'oro)
+                    </br>
+                    <font color="red">E</font> - Per utilizzare il kit medico (solo dopo averlo raccolto)
+                    </br>
+                    <font color="yellow">Premi "PLAY" per iniziare una nuova partita in una nuova finestra</font>
+                </p>
+            </div>
+            <div class="col-xs-12, col-sm-12, col-md-4, col-lg-4, col-xl-4"><img src="./img/zombie_con_casco.jpg" alt="zombie con casco" width="100%"></div>
+        </div>
+        <!-- BUTTON PLAY -->
+        <div class="row mt-3">
+            <div class="col-12 buttonPlay">
+                <input type="button" value="PLAY" onclick="play()">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- QUESTO VA SEMPRE AL FONDO ! -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
